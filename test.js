@@ -45,4 +45,29 @@ function FizzBuzz(N) {
 
 }
 
-FizzBuzz(15)
+// FizzBuzz(15)
+
+function anagram(first, second) {
+    first = first.toLowerCase()
+    second = second.toLowerCase()
+
+
+}
+
+
+// anagram('finder', 'Friend') 
+// anagram('hello', 'bye') 
+
+
+const findVowels = str => {
+    let count = 0
+    const vowels = ['a', 'e', 'i', 'o', 'u']
+    for(let char of str.toLowerCase()) {
+      if(vowels.includes(char)) {
+        count++
+      }
+    }
+    return count
+  }
+
+console.log(findVowels('Heabcdefgiii'))
